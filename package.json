@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.21.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start-old": "react-scripts start",
+    "build-old": "react-scripts build",
+    "test-old": "react-scripts test --env=jsdom",
+    "start": "rescripts start",
+    "build": "rescripts build",
+    "test": "rescripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -27,5 +31,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@rescripts/cli": "0.0.11",
+    "@rescripts/rescript-use-babel-config": "0.0.8",
+    "antd-scss-theme-plugin": "^1.0.7",
+    "babel-plugin-import": "^1.12.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0"
   }
 }
